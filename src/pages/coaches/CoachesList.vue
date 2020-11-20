@@ -8,7 +8,9 @@
       <router-link to="/register">Register as Coach</router-link>
     </div>
     <ul>
-      LIST OF COACHES
+      <li v-for="coach in filteredCoaches" v-bind:key="coach.id">
+        {{ coach.firstName }}
+      </li>
     </ul>
   </section>
 </template>
